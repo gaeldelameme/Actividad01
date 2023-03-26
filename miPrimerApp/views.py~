@@ -1,0 +1,12 @@
+from django.shortcuts import render,HttpResponse
+from .models import *
+from django.db.models import Subquery, Count, OuterRef
+
+# Create your views here.
+def index(request):
+    varEstudianteGrupo1 = Estudiante.objects.filter(grupo=1)
+    varEstudianteGrupo4 = Estudiante.objects.filter(grupo=4)
+    varEstudianteEdad = Estudiante.objects.filter(edad=22)
+    varEstudianteApellido = Estudiante.objects.filter(apellidos='Mendoza')
+    
+    return render(request,'index.html',{'varEstudianteGrupo1':varEstudianteGrupo1,'varEstudianteGrupo4':varEstudianteGrupo4,'varEstudianteApellido':varEstudianteApellido,'varEstudianteEdad':varEstudianteEdad})

@@ -1,0 +1,32 @@
+[
+{
+    "model": "miPrimerApp.grupo",
+    "fields":{ 
+    "id_grupo": 1
+    }
+},
+{
+    "model": "miPrimerApp.grupo",
+    "fields":{ 
+    "id_grupo": 2
+    }
+},
+{
+    "model": "miPrimerApp.grupo",
+    "fields":{ 
+    "id_grupo": 3
+    }
+},
+{
+    "model": "miPrimerApp.grupo",
+    "fields":{ 
+    "id_grupo": 4
+    }
+},
+{
+    "model": "miPrimerApp.grupo",
+    "fields":{ 
+    "id_grupo": 5
+    }
+}
+]
